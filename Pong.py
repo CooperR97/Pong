@@ -1,5 +1,6 @@
 # Simple Pong game
-# Created by @TokyoEdTech
+# Created by @TokyoEdTech, modified by @CooperR97
+# Original game found at https://www.youtube.com/watch?v=C6jJg9Zan7w&t=2295s
 
 import turtle
 
@@ -114,6 +115,7 @@ while True:
 
 
     # Paddle and ball collisions
+    # Additions to ball behavior include changing the angle the ball is deflected by manipulating the ball.dy variable based on where the ball strikes the paddle
     if (ball.xcor() > 340 and ball.xcor() < 350) and ((ball.ycor() < paddle_b.ycor() + 50 and ball.ycor() > paddle_b.ycor() - 50) and (ball.ycor() >= paddle_b.ycor() + 30 or ball.ycor() <= paddle_b.ycor() - 30)):
         ball.setx(340)
         ball.dy *= 2
