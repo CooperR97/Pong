@@ -2,4 +2,4 @@
 Small pong game written in Python3.
 
 
-![](pong.gif)
+<p align="center">![](pong.gif)</p>
